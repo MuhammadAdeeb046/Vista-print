@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Solutions - VistaPrint Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar bg-light py-2">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <small class="text-muted">
+                        <i class="fas fa-phone"></i> 1-800-VISTAPRINT
+                        <span class="mx-3">|</span>
+                        <i class="fas fa-envelope"></i> help@vistaprint.com
+                    </small>
+                </div>
+                <div class="col-md-6 text-end">
+                    <small>
+                        <a href="#" class="text-decoration-none me-3">Sign In</a>
+                        <a href="#" class="text-decoration-none">Create Account</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">
+                <i class="fas fa-print"></i> VistaPrint
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">All Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="business-solutions.html">Business Solutions</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="btn btn-outline-primary me-2" id="cart-button">
+                        <i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section bg-primary text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Complete Business Solutions</h1>
+                    <p class="lead mb-4">Everything your business needs to succeed - from logo design to digital marketing, we've got you covered.</p>
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-light btn-lg">Get Started</button>
+                        <button class="btn btn-outline-light btn-lg">View Packages</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43" class="img-fluid rounded" alt="Business Solutions">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Our Business Services</h2>
+                <p class="text-muted">Professional solutions to help your business grow</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-palette fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="card-title">Logo Design</h5>
+                            <p class="card-text">Professional logo design that represents your brand perfectly. Get multiple concepts and unlimited revisions.</p>
+                            <div class="price-tag mb-3">
+                                <span class="h4 text-primary">$299</span>
+                                <small class="text-muted">/design</small>
+                            </div>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-check text-success me-2"></i>5 Initial concepts</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Unlimited revisions</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Vector files included</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Brand guidelines</li>
+                            </ul>
+                            <button class="btn btn-primary w-100">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-globe fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="card-title">Website Design</h5>
+                            <p class="card-text">Custom website design that converts visitors into customers. Mobile-responsive and SEO-optimized.</p>
+                            <div class="price-tag mb-3">
+                                <span class="h4 text-primary">$999</span>
+                                <small class="text-muted">/website</small>
+                            </div>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-check text-success me-2"></i>Custom design</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Mobile responsive</li>
+                                <li><i class="fas fa-check text-success me-2"></i>SEO optimized</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Content management</li>
+                            </ul>
+                            <button class="btn btn-primary w-100">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-bullhorn fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="card-title">Digital Marketing</h5>
+                            <p class="card-text">Comprehensive digital marketing campaigns to grow your online presence and drive sales.</p>
+                            <div class="price-tag mb-3">
+                                <span class="h4 text-primary">$599</span>
+                                <small class="text-muted">/month</small>
+                            </div>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-check text-success me-2"></i>Social media management</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Google Ads campaigns</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Email marketing</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Analytics reporting</li>
+                            </ul>
+                            <button class="btn btn-primary w-100">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-print fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="card-title">Print Marketing</h5>
+                            <p class="card-text">Complete print marketing solutions including business cards, brochures, flyers, and more.</p>
+                            <div class="price-tag mb-3">
+                                <span class="h4 text-primary">$199</span>
+                                <small class="text-muted">/package</small>
+                            </div>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-check text-success me-2"></i>Business cards (500)</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Brochures (100)</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Flyers (200)</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Design included</li>
+                            </ul>
+                            <button class="btn btn-primary w-100">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-users fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="card-title">Brand Consulting</h5>
+                            <p class="card-text">Strategic brand consulting to help position your business for success in the marketplace.</p>
+                            <div class="price-tag mb-3">
+                                <span class="h4 text-primary">$499</span>
+                                <small class="text-muted">/consultation</small>
+                            </div>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-check text-success me-2"></i>Brand strategy session</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Market analysis</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Competitor research</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Action plan</li>
+                            </ul>
+                            <button class="btn btn-primary w-100">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-camera fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="card-title">Photography</h5>
+                            <p class="card-text">Professional product and business photography to showcase your brand in the best light.</p>
+                            <div class="price-tag mb-3">
+                                <span class="h4 text-primary">$399</span>
+                                <small class="text-muted">/session</small>
+                            </div>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-check text-success me-2"></i>2-hour session</li>
+                                <li><i class="fas fa-check text-success me-2"></i>50+ edited photos</li>
+                                <li><i class="fas fa-check text-success me-2"></i>High-resolution files</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Commercial license</li>
+                            </ul>
+                            <button class="btn btn-primary w-100">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Packages -->
+    <section class="business-packages py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Business Starter Packages</h2>
+                <p class="text-muted">Complete packages designed for businesses at every stage</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="package-card card h-100 border-0 shadow-sm">
+                        <div class="card-header bg-white text-center py-4">
+                            <h4 class="fw-bold">Startup Package</h4>
+                            <div class="price-display">
+                                <span class="h2 text-primary">$599</span>
+                                <small class="text-muted d-block">Perfect for new businesses</small>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Logo Design</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>500 Business Cards</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>100 Letterheads</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Basic Website (5 pages)</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Social Media Setup</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Brand Guidelines</li>
+                            </ul>
+                            <button class="btn btn-outline-primary w-100 mt-3">Choose Package</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="package-card card h-100 border-0 shadow-sm border-primary">
+                        <div class="card-header bg-primary text-white text-center py-4">
+                            <div class="popular-badge">Most Popular</div>
+                            <h4 class="fw-bold">Growth Package</h4>
+                            <div class="price-display">
+                                <span class="h2">$1,299</span>
+                                <small class="d-block">For growing businesses</small>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Everything in Startup</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Professional Website (10 pages)</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>SEO Optimization</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Marketing Materials Package</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Email Marketing Setup</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>3 Months Support</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 mt-3">Choose Package</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="package-card card h-100 border-0 shadow-sm">
+                        <div class="card-header bg-white text-center py-4">
+                            <h4 class="fw-bold">Enterprise Package</h4>
+                            <div class="price-display">
+                                <span class="h2 text-primary">$2,499</span>
+                                <small class="text-muted d-block">For established businesses</small>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Everything in Growth</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>E-commerce Website</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Digital Marketing Campaign</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Professional Photography</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Brand Consulting</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>6 Months Support</li>
+                            </ul>
+                            <button class="btn btn-outline-primary w-100 mt-3">Choose Package</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">How It Works</h2>
+                <p class="text-muted">Simple steps to get your business solutions</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h5>Consultation</h5>
+                        <p class="text-muted">We discuss your business needs and goals to create the perfect solution.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h5>Design & Strategy</h5>
+                        <p class="text-muted">Our experts create designs and strategies tailored to your brand.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h5>Review & Refine</h5>
+                        <p class="text-muted">You review our work and we make adjustments until it's perfect.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h5>Launch & Support</h5>
+                        <p class="text-muted">We launch your solutions and provide ongoing support for success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section bg-primary text-white py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Ready to Grow Your Business?</h2>
+            <p class="lead mb-4">Let our experts help you create a professional brand that stands out from the competition.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <button class="btn btn-light btn-lg">Get Free Consultation</button>
+                <button class="btn btn-outline-light btn-lg">View Portfolio</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-print"></i> VistaPrint
+                    </h5>
+                    <p class="text-light">Your trusted partner for professional printing and marketing solutions.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Logo Design</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Website Design</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Digital Marketing</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Brand Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Help Center</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Order Status</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <p class="text-light mb-2">
+                        <i class="fas fa-phone me-2"></i> 1-800-VISTAPRINT
+                    </p>
+                    <p class="text-light mb-2">
+                        <i class="fas fa-envelope me-2"></i> help@vistaprint.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add some interactive functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            // Animate service cards on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.service-card, .package-card, .process-step').forEach(card => {
+                observer.observe(card);
+            });
+
+            // Add click handlers for service buttons
+            document.querySelectorAll('.service-card .btn, .package-card .btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    alert('Thank you for your interest! Our team will contact you shortly.');
+                });
+            });
+        });
+    </script>
+    <style>
+        .service-icon {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .package-card {
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .package-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #ff6b35;
+            color: white;
+            padding: 0.25rem 1rem;
+            border-radius: 15px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .process-step {
+            padding: 2rem 1rem;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 1rem;
+        }
+
+        .service-card, .package-card {
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover, .package-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+        }
+    </style>
+</body>
+</html>
