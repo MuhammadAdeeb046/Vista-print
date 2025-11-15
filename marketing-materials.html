@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Materials - VistaPrint Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar bg-light py-2">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <small class="text-muted">
+                        <i class="fas fa-phone"></i> 1-800-VISTAPRINT
+                        <span class="mx-3">|</span>
+                        <i class="fas fa-envelope"></i> help@vistaprint.com
+                    </small>
+                </div>
+                <div class="col-md-6 text-end">
+                    <small>
+                        <a href="#" class="text-decoration-none me-3">Sign In</a>
+                        <a href="#" class="text-decoration-none">Create Account</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">
+                <i class="fas fa-print"></i> VistaPrint
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Business Cards</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="business-cards.html">Standard Business Cards</a></li>
+                            <li><a class="dropdown-item" href="business-cards.html">Premium Business Cards</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Marketing Materials</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="marketing-materials.html">Flyers</a></li>
+                            <li><a class="dropdown-item" href="marketing-materials.html">Brochures</a></li>
+                            <li><a class="dropdown-item" href="marketing-materials.html">Postcards</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Signage</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="signage.html">Yard Signs</a></li>
+                            <li><a class="dropdown-item" href="signage.html">Banners</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Clothing & Bags</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="clothing.html">T-Shirts</a></li>
+                            <li><a class="dropdown-item" href="clothing.html">Polo Shirts</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="btn btn-outline-primary me-2" id="cart-button">
+                        <i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section bg-primary text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Marketing Materials</h1>
+                    <p class="lead mb-4">Promote your business with professional flyers, brochures, and postcards that get results.</p>
+                    <button class="btn btn-light btn-lg" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">Shop Now</button>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=600&h=400&fit=crop" class="img-fluid rounded" alt="Marketing Materials">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="py-5" id="products">
+        <div class="container">
+            <h2 class="text-center mb-5">Marketing Materials</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card card h-100 border-0 shadow-sm category-card" data-category="flyers" data-price="19.99">
+                        <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&h=300&fit=crop" class="card-img-top" alt="Flyers">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Flyers</h5>
+                            <p class="text-muted small">8.5" x 11" • 100lb text • 100 flyers</p>
+                            <div class="price-section">
+                                <span class="price-from">Starting at</span>
+                                <div class="price fw-bold text-primary fs-4">$19.99</div>
+                            </div>
+                            <div class="rating mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-warning"></i>
+                                <small class="text-muted">(1,523)</small>
+                            </div>
+                            <button class="btn btn-primary w-100">Design & Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card card h-100 border-0 shadow-sm category-card" data-category="brochures" data-price="29.99">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop" class="card-img-top" alt="Brochures">
+                            <div class="product-badge">Popular</div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Brochures</h5>
+                            <p class="text-muted small">Tri-fold • 100lb gloss • 100 brochures</p>
+                            <div class="price-section">
+                                <span class="price-from">Starting at</span>
+                                <div class="price fw-bold text-primary fs-4">$29.99</div>
+                            </div>
+                            <div class="rating mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <small class="text-muted">(987)</small>
+                            </div>
+                            <button class="btn btn-primary w-100">Design & Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card card h-100 border-0 shadow-sm category-card" data-category="postcards" data-price="14.99">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop" class="card-img-top" alt="Postcards">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Postcards</h5>
+                            <p class="text-muted small">4" x 6" • 14pt cardstock • 250 postcards</p>
+                            <div class="price-section">
+                                <span class="price-from">Starting at</span>
+                                <div class="price fw-bold text-primary fs-4">$14.99</div>
+                            </div>
+                            <div class="rating mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-warning"></i>
+                                <small class="text-muted">(743)</small>
+                            </div>
+                            <button class="btn btn-primary w-100">Design & Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include designer container -->
+    <div class="container my-5 designer-container" style="display: none;">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title text-center mb-4">Design Your <span id="selected-product">Marketing Material</span></h3>
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="design-section mb-4">
+                                    <h4>Front Design</h4>
+                                    <input type="file" class="form-control mb-3" id="front-design-upload" accept="image/*">
+                                    <div class="preview-area" id="front-preview-container">
+                                        <img id="front-design-preview" src="" alt="Front Preview">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="design-section mb-4" id="back-design-section" style="display: none;">
+                                    <h4>Back Design</h4>
+                                    <input type="file" class="form-control mb-3" id="back-design-upload" accept="image/*">
+                                    <div class="preview-area" id="back-preview-container">
+                                        <img id="back-design-preview" src="" alt="Back Preview">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="customization-panel">
+                            <input type="number" class="form-control mb-3" id="quantity" min="1" value="1" placeholder="Quantity">
+                            <button class="btn btn-primary w-100" id="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include modals -->
+    <div class="modal fade" id="cartModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Shopping Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="cart-items" class="mb-3"></div>
+                    <div class="cart-summary">
+                        <h5>Total: $<span id="cart-total">0.00</span></h5>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+                    <button type="button" class="btn btn-primary" id="checkout-button">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cropperModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Crop Image</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="img-container">
+                        <img id="cropperImage" src="" alt="Image to crop">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="cropImage">Crop</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3"><i class="fas fa-print"></i> VistaPrint</h5>
+                    <p class="text-light">Your trusted partner for professional printing and marketing solutions.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cropperjs@1.5.12/dist/cropper.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
