@@ -1,16 +1,34 @@
-/* General Styles */
+/* General Styles - VistaPrint Design */
 :root {
     --primary-color: #0066cc;
     --secondary-color: #f8f9fa;
     --accent-color: #ff6b35;
     --text-dark: #333;
     --text-light: #666;
+    --vp-blue: #0066cc;
+    --vp-dark: #333333;
+    --vp-gray: #666666;
+    --vp-light-gray: #f5f5f5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
+    font-size: 14px;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 /* Top Bar Styles */
@@ -20,9 +38,53 @@ body {
 }
 
 /* Navigation Styles */
+.navbar {
+    border-bottom: 1px solid #e9ecef;
+}
+
 .navbar-brand {
     font-size: 1.5rem;
     font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    color: #333 !important;
+    transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--primary-color) !important;
+    font-weight: 600;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+    z-index: 1040;
+    position: absolute;
+    min-width: 200px;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.875rem;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: var(--primary-color);
 }
 
 .search-box input {
@@ -30,12 +92,32 @@ body {
     border-radius: 25px;
     border: 1px solid #ddd;
     padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+}
+
+.search-box input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(0, 102, 204, 0.1);
 }
 
 /* Hero Section */
 .hero-section {
     background: linear-gradient(135deg, var(--primary-color) 0%, #004499 100%);
     min-height: 500px;
+    padding: 4rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
 }
 
 /* Features Bar */
@@ -47,23 +129,35 @@ body {
 .product-card {
     transition: all 0.3s ease;
     cursor: pointer;
-    border-radius: 12px;
+    border-radius: 8px;
     overflow: hidden;
+    border: 1px solid #e9ecef;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .product-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12) !important;
+    border-color: var(--primary-color);
 }
 
 .product-card img {
     height: 220px;
     object-fit: cover;
     transition: transform 0.3s ease;
+    background: #f8f9fa;
 }
 
 .product-card:hover img {
-    transform: scale(1.05);
+    transform: scale(1.03);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .product-badge {
@@ -140,27 +234,41 @@ body {
 
 /* Footer Styles */
 footer {
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    background: #1a1a1a;
+    border-top: 1px solid #333;
 }
 
 footer h5, footer h6 {
     color: #fff;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #fff !important;
+    text-decoration: underline !important;
 }
 
 footer .social-links a {
     display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
     text-align: center;
     border-radius: 50%;
     background: rgba(255,255,255,0.1);
     transition: all 0.3s ease;
+    margin-right: 0.5rem;
 }
 
 footer .social-links a:hover {
     background: var(--primary-color);
     transform: translateY(-2px);
+    text-decoration: none !important;
 }
 
 /* Designer Area */
@@ -556,32 +664,134 @@ footer .social-links a:hover {
         border-radius: 8px;
         box-shadow: 0 4px 20px rgba(0,0,0,0.1);
         margin-top: 1rem;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+    
+    .navbar-nav {
+        flex-direction: column;
+    }
+    
+    .navbar-nav .nav-item {
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.75rem 1rem;
+        border-bottom: 1px solid #f0f0f0;
     }
     
     .dropdown-menu {
-        position: static;
+        position: static !important;
         float: none;
-        width: auto;
+        width: 100%;
         margin-top: 0;
-        background-color: transparent;
+        background-color: #f8f9fa;
         border: 0;
         box-shadow: none;
+        padding-left: 1.5rem;
+        border-radius: 0;
     }
     
     .dropdown-item {
         padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+    
+    .navbar-nav .nav-link.dropdown-toggle::after {
+        float: right;
+        margin-top: 0.5rem;
+    }
+    
+    .search-box {
+        width: 100%;
+        margin: 1rem 0;
+    }
+    
+    .search-box input {
+        width: 100%;
     }
 }
 
-/* Responsive Design */
+/* Container fixes to prevent horizontal scroll */
+.container,
+.container-fluid {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-x: hidden;
+}
+
+/* Navbar specific fixes */
+.navbar .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: visible;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.row > * {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Prevent any element from causing horizontal scroll */
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navbar fixes */
+.navbar {
+    max-width: 100%;
+    position: relative;
+    z-index: 1030;
+}
+
+.navbar-collapse {
+    max-width: 100%;
+}
+
+.dropdown-menu {
+    z-index: 1040;
+    position: absolute;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* Desktop Navigation - Better handling of many items */
+@media (min-width: 992px) {
+    .navbar-nav {
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+    
+    .navbar-nav .nav-item {
+        white-space: nowrap;
+    }
+    
+    .dropdown-menu {
+        min-width: 200px;
+    }
+}
+
 @media (max-width: 768px) {
     .hero-section {
         text-align: center;
-        padding: 3rem 0;
+        padding: 2rem 0;
+        min-height: auto;
     }
     
     .hero-section h1 {
-        font-size: 2rem;
+        font-size: 1.75rem;
+    }
+    
+    .hero-section .lead {
+        font-size: 1rem;
     }
     
     .search-box {
@@ -618,10 +828,6 @@ footer .social-links a:hover {
         margin: 0.5rem;
     }
     
-    .top-bar {
-        display: none;
-    }
-    
     .navbar-brand {
         font-size: 1.25rem;
     }
@@ -630,15 +836,30 @@ footer .social-links a:hover {
         padding: 0.75rem 1.25rem;
         font-size: 1rem;
     }
+    
+    footer .col-lg-2,
+    footer .col-lg-3 {
+        margin-bottom: 2rem;
+    }
+    
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 @media (max-width: 576px) {
     .hero-section h1 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
     
     .hero-section .lead {
-        font-size: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .hero-section .btn-lg {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
     }
     
     .designer-container .row {
@@ -660,5 +881,22 @@ footer .social-links a:hover {
     
     .card-body {
         padding: 1rem;
+    }
+    
+    .product-card img {
+        height: 180px;
+    }
+    
+    .navbar-toggler {
+        padding: 0.25rem 0.5rem;
+        font-size: 1rem;
+    }
+    
+    footer {
+        text-align: center;
+    }
+    
+    footer .text-md-end {
+        text-align: center !important;
     }
 }

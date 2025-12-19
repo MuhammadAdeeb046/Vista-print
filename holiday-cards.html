@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clothing & Bags - VistaPrint Clone</title>
+    <title>Holiday Cards & Christmas Cards - VistaPrint Clone</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
@@ -19,7 +19,7 @@
                     </small>
                 </div>
                 <div class="col-md-6 text-end">
-                    <small id="user-info">
+                    <small>
                         <a href="signin.html" class="text-decoration-none me-3 text-dark">Sign In</a>
                         <a href="create-account.html" class="text-decoration-none text-dark">Create Account</a>
                     </small>
@@ -40,7 +40,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="holidayDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Holiday Cards</a>
+                        <a class="nav-link dropdown-toggle active" href="#" id="holidayDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Holiday Cards</a>
                         <ul class="dropdown-menu" aria-labelledby="holidayDropdown">
                             <li><a class="dropdown-item" href="holiday-cards.html">Holiday Cards</a></li>
                             <li><a class="dropdown-item" href="holiday-cards.html">Christmas Cards</a></li>
@@ -92,7 +92,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="clothingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Clothing & Bags</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="clothingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Clothing & Bags</a>
                         <ul class="dropdown-menu" aria-labelledby="clothingDropdown">
                             <li><a class="dropdown-item" href="clothing.html">T-Shirts</a></li>
                             <li><a class="dropdown-item" href="clothing.html">Polo Shirts</a></li>
@@ -159,12 +159,12 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <h1 class="display-4 fw-bold mb-4">Custom Clothing & Bags</h1>
-                    <p class="lead mb-4">Create custom apparel and accessories that represent your brand with style and quality.</p>
-                    <button class="btn btn-light btn-lg" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">Shop Now</button>
+                    <h1 class="display-4 fw-bold mb-4">Holiday Cards & Christmas Cards</h1>
+                    <p class="lead mb-4">Spread joy this holiday season with personalized cards that capture your family's special moments.</p>
+                    <button class="btn btn-light btn-lg" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">Shop Holiday Cards</button>
                 </div>
                 <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&h=400&fit=crop" class="img-fluid rounded" alt="Custom Clothing">
+                    <img src="https://images.unsplash.com/photo-1482517967863-00e15c9b44be?w=600&h=400&fit=crop" class="img-fluid rounded" alt="Holiday Cards">
                 </div>
             </div>
         </div>
@@ -173,17 +173,17 @@
     <!-- Products Section -->
     <section class="py-5" id="products">
         <div class="container">
-            <h2 class="text-center mb-5">Clothing & Accessories</h2>
+            <h2 class="text-center mb-5">Holiday Card Collections</h2>
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6">
-                    <div class="product-card card h-100 border-0 shadow-sm category-card" data-category="tshirt" data-price="24.99">
+                    <div class="product-card card h-100 border-0 shadow-sm category-card" data-category="holiday-cards" data-price="24.99">
                         <div class="position-relative">
-                            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=300&fit=crop" class="card-img-top" alt="Custom T-Shirts">
-                            <div class="product-badge">Popular</div>
+                            <img src="https://images.unsplash.com/photo-1482517967863-00e15c9b44be?w=400&h=300&fit=crop" class="card-img-top" alt="Christmas Cards">
+                            <div class="product-badge">Most Popular</div>
                         </div>
                         <div class="card-body text-center">
-                            <h5 class="card-title">Custom T-Shirts</h5>
-                            <p class="text-muted small">100% Cotton • All Sizes • Multiple Colors</p>
+                            <h5 class="card-title">Christmas Cards</h5>
+                            <p class="text-muted small">Standard 5" x 7" • 20 cards</p>
                             <div class="price-section">
                                 <span class="price-from">Starting at</span>
                                 <div class="price fw-bold text-primary fs-4">$24.99</div>
@@ -194,7 +194,7 @@
                                 <i class="fas fa-star text-warning"></i>
                                 <i class="fas fa-star text-warning"></i>
                                 <i class="fas fa-star text-warning"></i>
-                                <small class="text-muted">(3,241)</small>
+                                <small class="text-muted">(4,521)</small>
                             </div>
                             <button class="btn btn-primary w-100">Design & Order</button>
                         </div>
@@ -202,11 +202,34 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6">
-                    <div class="product-card card h-100 border-0 shadow-sm category-card" data-category="polo" data-price="34.99">
-                        <img src="https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=400&h=300&fit=crop" class="card-img-top" alt="Polo Shirts">
+                    <div class="product-card card h-100 border-0 shadow-sm category-card" data-category="holiday-cards" data-price="29.99">
+                        <img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=400&h=300&fit=crop" class="card-img-top" alt="Photo Holiday Cards">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Polo Shirts</h5>
-                            <p class="text-muted small">Cotton blend • Professional look • All Sizes</p>
+                            <h5 class="card-title">Photo Holiday Cards</h5>
+                            <p class="text-muted small">5" x 7" • 1-3 photos • 20 cards</p>
+                            <div class="price-section">
+                                <span class="price-from">Starting at</span>
+                                <div class="price fw-bold text-primary fs-4">$29.99</div>
+                            </div>
+                            <div class="rating mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <small class="text-muted">(3,892)</small>
+                            </div>
+                            <button class="btn btn-primary w-100">Design & Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card card h-100 border-0 shadow-sm category-card" data-category="holiday-cards" data-price="34.99">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop" class="card-img-top" alt="Foil Holiday Cards">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Foil Holiday Cards</h5>
+                            <p class="text-muted small">Gold/Silver foil • Premium finish • 20 cards</p>
                             <div class="price-section">
                                 <span class="price-from">Starting at</span>
                                 <div class="price fw-bold text-primary fs-4">$34.99</div>
@@ -217,7 +240,7 @@
                                 <i class="fas fa-star text-warning"></i>
                                 <i class="fas fa-star text-warning"></i>
                                 <i class="far fa-star text-warning"></i>
-                                <small class="text-muted">(1,456)</small>
+                                <small class="text-muted">(2,145)</small>
                             </div>
                             <button class="btn btn-primary w-100">Design & Order</button>
                         </div>
@@ -225,34 +248,11 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6">
-                    <div class="product-card card h-100 border-0 shadow-sm category-card" data-category="hoodies" data-price="44.99">
-                        <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=400&h=300&fit=crop" class="card-img-top" alt="Hoodies">
+                    <div class="product-card card h-100 border-0 shadow-sm category-card" data-category="holiday-cards" data-price="19.99">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop" class="card-img-top" alt="New Year Cards">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Hoodies</h5>
-                            <p class="text-muted small">Cotton blend • Comfortable fit • All Sizes</p>
-                            <div class="price-section">
-                                <span class="price-from">Starting at</span>
-                                <div class="price fw-bold text-primary fs-4">$44.99</div>
-                            </div>
-                            <div class="rating mb-3">
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <small class="text-muted">(987)</small>
-                            </div>
-                            <button class="btn btn-primary w-100">Design & Order</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="product-card card h-100 border-0 shadow-sm category-card" data-category="tote-bags" data-price="19.99">
-                        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=300&fit=crop" class="card-img-top" alt="Tote Bags">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Tote Bags</h5>
-                            <p class="text-muted small">Canvas material • Eco-friendly • Durable</p>
+                            <h5 class="card-title">New Year's Cards</h5>
+                            <p class="text-muted small">5" x 7" • Celebrate the new year • 20 cards</p>
                             <div class="price-section">
                                 <span class="price-from">Starting at</span>
                                 <div class="price fw-bold text-primary fs-4">$19.99</div>
@@ -263,7 +263,7 @@
                                 <i class="fas fa-star text-warning"></i>
                                 <i class="fas fa-star text-warning"></i>
                                 <i class="far fa-star text-warning"></i>
-                                <small class="text-muted">(623)</small>
+                                <small class="text-muted">(1,234)</small>
                             </div>
                             <button class="btn btn-primary w-100">Design & Order</button>
                         </div>
@@ -273,13 +273,13 @@
         </div>
     </section>
 
-    <!-- Include designer container -->
+    <!-- Designer Container -->
     <div class="container my-5 designer-container" style="display: none;">
         <div class="card">
             <div class="card-body">
-                <h3 class="card-title text-center mb-4">Design Your <span id="selected-product">Clothing</span></h3>
+                <h3 class="card-title text-center mb-4">Design Your <span id="selected-product">Holiday Card</span></h3>
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-lg-10">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="design-section mb-4">
@@ -292,96 +292,18 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="design-section mb-4" id="back-design-section">
-                                    <h4>Back Design</h4>
-                                    <input type="file" class="form-control mb-3" id="back-design-upload" accept="image/*">
-                                    <div class="preview-area" id="back-preview-container">
-                                        <img id="back-design-preview" src="" alt="Back Preview">
-                                    </div>
+                                    <h4>Inside Message</h4>
+                                    <textarea class="form-control mb-3" rows="5" placeholder="Enter your holiday message..."></textarea>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-2">
                         <div class="customization-panel">
-                            <div class="color-selection mb-3" id="color-selection">
-                                <label>Select Color</label>
-                                <div class="color-options">
-                                    <div class="color-option">
-                                        <input type="radio" name="color" id="color-black" value="#000000" checked>
-                                        <label for="color-black" class="color-circle" style="background-color: #000000;"></label>
-                                    </div>
-                                    <div class="color-option">
-                                        <input type="radio" name="color" id="color-white" value="#ffffff">
-                                        <label for="color-white" class="color-circle" style="background-color: #ffffff;"></label>
-                                    </div>
-                                    <div class="color-option">
-                                        <input type="radio" name="color" id="color-grey" value="#808080">
-                                        <label for="color-grey" class="color-circle" style="background-color: #808080;"></label>
-                                    </div>
-                                    <div class="color-option">
-                                        <input type="radio" name="color" id="color-navy" value="#000080">
-                                        <label for="color-navy" class="color-circle" style="background-color: #000080;"></label>
-                                    </div>
-                                </div>
-                                <p class="selected-color-text">Selected Color: Black</p>
-                            </div>
-                            <div id="size-select" class="size-select-container mb-3">
-                                <label>Select Size</label>
-                                <select class="form-select" id="product-size">
-                                    <option value="">Choose size...</option>
-                                    <option value="S">Small</option>
-                                    <option value="M">Medium</option>
-                                    <option value="L">Large</option>
-                                    <option value="XL">Extra Large</option>
-                                    <option value="XXL">2X Large</option>
-                                </select>
-                            </div>
-                            <input type="number" class="form-control mb-3" id="quantity" min="1" value="1" placeholder="Quantity">
+                            <input type="number" class="form-control mb-3" id="quantity" min="20" value="20" step="10" placeholder="Quantity">
                             <button class="btn btn-primary w-100" id="add-to-cart">Add to Cart</button>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Include modals -->
-    <div class="modal fade" id="cartModal" tabindex="-1">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Shopping Cart</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <div id="cart-items" class="mb-3"></div>
-                    <div class="cart-summary">
-                        <h5>Total: $<span id="cart-total">0.00</span></h5>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
-                    <button type="button" class="btn btn-primary" id="checkout-button">Proceed to Checkout</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="cropperModal" tabindex="-1">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Crop Image</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="img-container">
-                        <img id="cropperImage" src="" alt="Image to crop">
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary" id="cropImage">Crop</button>
                 </div>
             </div>
         </div>
@@ -458,36 +380,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/cropperjs@1.5.12/dist/cropper.min.js"></script>
     <script src="./js/script.js"></script>
-    <script>
-        // Load user info and cart count on page load
-        document.addEventListener('DOMContentLoaded', function() {
-            // Load user info
-            const currentUser = JSON.parse(localStorage.getItem('currentUser'));
-            const userInfoElement = document.getElementById('user-info');
-
-            if (currentUser && userInfoElement) {
-                userInfoElement.innerHTML = `
-                    <span class="me-3">Welcome, ${currentUser.firstName}!</span>
-                    <a href="#" class="text-decoration-none text-dark me-3" onclick="logout()">Sign Out</a>
-                `;
-            }
-
-            // Load cart count
-            const cartCount = localStorage.getItem('cartCount') || '0';
-            const cartCountElement = document.getElementById('cart-count');
-            if (cartCountElement) {
-                cartCountElement.textContent = cartCount;
-            }
-        });
-
-        // Logout function
-        function logout() {
-            localStorage.removeItem('currentUser');
-            localStorage.setItem('cartCount', '0');
-            location.reload();
-        }
-    </script>
 </body>
 </html>
+

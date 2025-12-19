@@ -21,20 +21,18 @@
   </head>
   <body>
     <!-- Top Bar -->
-    <div class="top-bar bg-light py-2">
+    <div class="top-bar bg-light py-2 d-none d-md-block">
       <div class="container-fluid">
         <div class="row align-items-center">
           <div class="col-md-6">
             <small class="text-muted">
-              <i class="fas fa-phone"></i> 1-800-VISTAPRINT
-              <span class="mx-3">|</span>
-              <i class="fas fa-envelope"></i> help@vistaprint.com
+              Help is here <a href="tel:18662074955" class="text-decoration-none text-dark">1.866.207.4955</a>
             </small>
           </div>
           <div class="col-md-6 text-end">
             <small>
-              <a href="#" class="text-decoration-none me-3">Sign In</a>
-              <a href="#" class="text-decoration-none">Create Account</a>
+              <a href="signin.html" class="text-decoration-none me-3 text-dark">Sign In</a>
+              <a href="create-account.html" class="text-decoration-none text-dark">Create Account</a>
             </small>
           </div>
         </div>
@@ -42,10 +40,10 @@
     </div>
 
     <!-- Main Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand fw-bold text-primary" href="index.html">
-          <i class="fas fa-print"></i> VistaPrint
+        <a class="navbar-brand fw-bold" href="index.html" style="color: #0066cc; font-size: 1.5rem;">
+          VistaPrint
         </a>
         <button
           class="navbar-toggler"
@@ -59,6 +57,27 @@
           <ul class="navbar-nav me-auto">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                Holiday Cards
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="holiday-cards.html">Holiday Cards</a></li>
+                <li><a class="dropdown-item" href="holiday-cards.html">Christmas Cards</a></li>
+                <li><a class="dropdown-item" href="holiday-cards.html">New Year's Cards</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                Calendars & Gifts
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="calendars-gifts.html">Wall Calendars</a></li>
+                <li><a class="dropdown-item" href="calendars-gifts.html">Desk Calendars</a></li>
+                <li><a class="dropdown-item" href="calendars-gifts.html">Photo Books</a></li>
+                <li><a class="dropdown-item" href="calendars-gifts.html">Canvas Prints</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
                 Business Cards
               </a>
               <ul class="dropdown-menu">
@@ -69,23 +88,35 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                Marketing Materials
+                Postcards & Print
               </a>
               <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="marketing-materials.html">Postcards</a></li>
                 <li><a class="dropdown-item" href="marketing-materials.html">Flyers</a></li>
                 <li><a class="dropdown-item" href="marketing-materials.html">Brochures</a></li>
-                <li><a class="dropdown-item" href="marketing-materials.html">Postcards</a></li>
-                <li><a class="dropdown-item" href="marketing-materials.html">Banners</a></li>
+                <li><a class="dropdown-item" href="marketing-materials.html">Booklets</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                Signage
+                Signs, Banners & Posters
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="signage.html">Yard Signs</a></li>
                 <li><a class="dropdown-item" href="signage.html">Banners</a></li>
+                <li><a class="dropdown-item" href="signage.html">Posters</a></li>
                 <li><a class="dropdown-item" href="signage.html">Window Clings</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                Stickers & Labels
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="stickers-labels.html">Sticker Singles</a></li>
+                <li><a class="dropdown-item" href="stickers-labels.html">Sheet Stickers</a></li>
+                <li><a class="dropdown-item" href="stickers-labels.html">Roll Labels</a></li>
+                <li><a class="dropdown-item" href="stickers-labels.html">Return Address Labels</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -99,18 +130,61 @@
                 <li><a class="dropdown-item" href="clothing.html">Tote Bags</a></li>
               </ul>
             </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                Promotional Products
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="promotional-products.html">Water Bottles</a></li>
+                <li><a class="dropdown-item" href="promotional-products.html">Mugs</a></li>
+                <li><a class="dropdown-item" href="promotional-products.html">Pens & Markers</a></li>
+                <li><a class="dropdown-item" href="promotional-products.html">USB Drives</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                Packaging
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="packaging.html">Mailer Boxes</a></li>
+                <li><a class="dropdown-item" href="packaging.html">Shipping Boxes</a></li>
+                <li><a class="dropdown-item" href="packaging.html">Gift Bags</a></li>
+                <li><a class="dropdown-item" href="packaging.html">Hang Tags</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                Invitations & Wedding
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="invitations-wedding.html">Wedding Invitations</a></li>
+                <li><a class="dropdown-item" href="invitations-wedding.html">Save the Dates</a></li>
+                <li><a class="dropdown-item" href="invitations-wedding.html">Thank You Cards</a></li>
+                <li><a class="dropdown-item" href="invitations-wedding.html">Stationery</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                Logo & Websites
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="logo-websites.html">Logo Design</a></li>
+                <li><a class="dropdown-item" href="logo-websites.html">Website Design</a></li>
+                <li><a class="dropdown-item" href="logo-websites.html">Social Media Graphics</a></li>
+              </ul>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="products.html">All Products</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="business-solutions.html">Business Solutions</a>
+              <a class="nav-link" href="design-services.html">Design Services</a>
             </li>
           </ul>
           <div class="d-flex align-items-center">
-            <div class="search-box me-3">
-              <input type="text" class="form-control" placeholder="Search products...">
+            <div class="search-box me-3 d-none d-md-block">
+              <input type="text" class="form-control" placeholder="Search products..." style="width: 200px;">
             </div>
-            <a href="#" class="btn btn-outline-primary me-2" id="cart-button">
+            <a href="#" class="btn btn-outline-primary me-2 px-4" id="cart-button">
               <i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)
             </a>
           </div>
@@ -515,75 +589,66 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 mb-4">
-            <h5 class="fw-bold mb-3">
-              <i class="fas fa-print"></i> VistaPrint
-            </h5>
-            <p class="text-light">Your trusted partner for professional printing and marketing solutions.</p>
-            <div class="social-links">
-              <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
-            </div>
+            <h5 class="fw-bold mb-3">VistaPrint</h5>
+            <p class="text-light small">Here for small business since 1995.</p>
           </div>
-          
           <div class="col-lg-2 col-md-6 mb-4">
-            <h6 class="fw-bold mb-3">Products</h6>
+            <h6 class="fw-bold mb-3">Let Us Help</h6>
             <ul class="list-unstyled">
-              <li><a href="#" class="text-light text-decoration-none">Business Cards</a></li>
-              <li><a href="#" class="text-light text-decoration-none">Flyers</a></li>
-              <li><a href="#" class="text-light text-decoration-none">Brochures</a></li>
-              <li><a href="#" class="text-light text-decoration-none">Banners</a></li>
-              <li><a href="#" class="text-light text-decoration-none">T-Shirts</a></li>
+              <li><a href="signin.html" class="text-light text-decoration-none small">My Account</a></li>
+              <li><a href="shipping.html" class="text-light text-decoration-none small">Shipping</a></li>
+              <li><a href="contact-support.html" class="text-light text-decoration-none small">Contact & Support</a></li>
+              <li><a href="ideas-advice.html" class="text-light text-decoration-none small">Ideas & Advice</a></li>
+              <li><a href="reseller-program.html" class="text-light text-decoration-none small">Reseller Program</a></li>
+              <li><a href="accessibility.html" class="text-light text-decoration-none small">Accessibility</a></li>
             </ul>
           </div>
-          
           <div class="col-lg-2 col-md-6 mb-4">
-            <h6 class="fw-bold mb-3">Services</h6>
+            <h6 class="fw-bold mb-3">Our Company</h6>
             <ul class="list-unstyled">
-              <li><a href="#" class="text-light text-decoration-none">Logo Design</a></li>
-              <li><a href="#" class="text-light text-decoration-none">Website Design</a></li>
-              <li><a href="#" class="text-light text-decoration-none">Digital Marketing</a></li>
-              <li><a href="#" class="text-light text-decoration-none">Design Services</a></li>
+              <li><a href="about-us.html" class="text-light text-decoration-none small">About Us</a></li>
+              <li><a href="careers.html" class="text-light text-decoration-none small">Careers</a></li>
+              <li><a href="ambassador-program.html" class="text-light text-decoration-none small">Ambassador Program</a></li>
+              <li><a href="for-investors.html" class="text-light text-decoration-none small">For Investors</a></li>
+              <li><a href="for-media.html" class="text-light text-decoration-none small">For Media</a></li>
+              <li><a href="sustainability.html" class="text-light text-decoration-none small">Sustainability</a></li>
             </ul>
           </div>
-          
           <div class="col-lg-2 col-md-6 mb-4">
-            <h6 class="fw-bold mb-3">Support</h6>
+            <h6 class="fw-bold mb-3">Legal</h6>
             <ul class="list-unstyled">
-              <li><a href="#" class="text-light text-decoration-none">Help Center</a></li>
-              <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
-              <li><a href="#" class="text-light text-decoration-none">Order Status</a></li>
-              <li><a href="#" class="text-light text-decoration-none">Returns</a></li>
+              <li><a href="privacy-policy.html" class="text-light text-decoration-none small">Privacy and Cookie Policy</a></li>
+              <li><a href="terms-conditions.html" class="text-light text-decoration-none small">Terms and Conditions</a></li>
+              <li><a href="legal-matters.html" class="text-light text-decoration-none small">Legal Matters</a></li>
+              <li><a href="do-not-sell.html" class="text-light text-decoration-none small">Do Not Sell or Share My Info</a></li>
             </ul>
           </div>
-          
           <div class="col-lg-3 col-md-6 mb-4">
-            <h6 class="fw-bold mb-3">Contact Info</h6>
-            <div class="contact-info">
-              <p class="text-light mb-2">
-                <i class="fas fa-phone me-2"></i> 1-800-VISTAPRINT
-              </p>
-              <p class="text-light mb-2">
-                <i class="fas fa-envelope me-2"></i> help@vistaprint.com
-              </p>
-              <p class="text-light mb-2">
-                <i class="fas fa-map-marker-alt me-2"></i> 95 Hayden Ave, Lexington, MA
-              </p>
+            <h6 class="fw-bold mb-3">Contact</h6>
+            <p class="text-light small mb-2"><a href="tel:18662074955" class="text-light text-decoration-none">1.866.207.4955</a></p>
+            <div class="social-links mt-3">
+              <a href="#" class="text-white me-3" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-white me-3" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-white me-3" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
             </div>
           </div>
         </div>
-        
         <hr class="my-4">
-        
         <div class="row align-items-center">
           <div class="col-md-6">
-            <p class="text-light mb-0">&copy; 2024 VistaPrint. All rights reserved.</p>
+            <p class="text-light small mb-0">A CIMPRESS company © 2001-2025 VistaPrint. All rights reserved.</p>
+            <p class="text-light small mb-0 mt-1">Unless stated otherwise, prices are exclusive of delivery and product options.</p>
           </div>
           <div class="col-md-6 text-md-end">
-            <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
-            <a href="#" class="text-light text-decoration-none me-3">Terms of Service</a>
-            <a href="#" class="text-light text-decoration-none">Accessibility</a>
+            <p class="text-light small mb-0">Current country: United States</p>
+            <div class="mt-2">
+              <span class="text-light small me-2">Payment methods:</span>
+              <i class="fab fa-cc-mastercard text-light me-2"></i>
+              <i class="fab fa-cc-paypal text-light me-2"></i>
+              <i class="fab fa-cc-visa text-light me-2"></i>
+              <i class="fab fa-cc-apple-pay text-light"></i>
+            </div>
           </div>
         </div>
       </div>

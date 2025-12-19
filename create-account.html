@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - VistaPrint</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar bg-light py-2">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <small class="text-muted">
+                        <i class="fas fa-phone"></i> Help is here 1.866.207.4955
+                    </small>
+                </div>
+                <div class="col-md-6 text-end">
+                    <small>
+                        <a href="signin.html" class="text-decoration-none me-3">Sign In</a>
+                        <a href="create-account.html" class="text-decoration-none">Create Account</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html" style="color: #0066cc; font-size: 1.5rem;">
+                VistaPrint
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="holidayDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Holiday Cards</a>
+                        <ul class="dropdown-menu" aria-labelledby="holidayDropdown">
+                            <li><a class="dropdown-item" href="holiday-cards.html">Holiday Cards</a></li>
+                            <li><a class="dropdown-item" href="holiday-cards.html">Christmas Cards</a></li>
+                            <li><a class="dropdown-item" href="holiday-cards.html">New Year's Cards</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="calendarsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Calendars & Gifts</a>
+                        <ul class="dropdown-menu" aria-labelledby="calendarsDropdown">
+                            <li><a class="dropdown-item" href="calendars-gifts.html">Wall Calendars</a></li>
+                            <li><a class="dropdown-item" href="calendars-gifts.html">Desk Calendars</a></li>
+                            <li><a class="dropdown-item" href="calendars-gifts.html">Photo Books</a></li>
+                            <li><a class="dropdown-item" href="calendars-gifts.html">Canvas Prints</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="businessCardsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Business Cards</a>
+                        <ul class="dropdown-menu" aria-labelledby="businessCardsDropdown">
+                            <li><a class="dropdown-item" href="business-cards.html">Standard Business Cards</a></li>
+                            <li><a class="dropdown-item" href="business-cards.html">Premium Business Cards</a></li>
+                            <li><a class="dropdown-item" href="business-cards.html">Folded Business Cards</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="postcardsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Postcards & Print</a>
+                        <ul class="dropdown-menu" aria-labelledby="postcardsDropdown">
+                            <li><a class="dropdown-item" href="marketing-materials.html">Postcards</a></li>
+                            <li><a class="dropdown-item" href="marketing-materials.html">Flyers</a></li>
+                            <li><a class="dropdown-item" href="marketing-materials.html">Brochures</a></li>
+                            <li><a class="dropdown-item" href="marketing-materials.html">Booklets</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="signageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Signs, Banners & Posters</a>
+                        <ul class="dropdown-menu" aria-labelledby="signageDropdown">
+                            <li><a class="dropdown-item" href="signage.html">Yard Signs</a></li>
+                            <li><a class="dropdown-item" href="signage.html">Banners</a></li>
+                            <li><a class="dropdown-item" href="signage.html">Posters</a></li>
+                            <li><a class="dropdown-item" href="signage.html">Window Clings</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="stickersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Stickers & Labels</a>
+                        <ul class="dropdown-menu" aria-labelledby="stickersDropdown">
+                            <li><a class="dropdown-item" href="stickers-labels.html">Sticker Singles</a></li>
+                            <li><a class="dropdown-item" href="stickers-labels.html">Sheet Stickers</a></li>
+                            <li><a class="dropdown-item" href="stickers-labels.html">Roll Labels</a></li>
+                            <li><a class="dropdown-item" href="stickers-labels.html">Return Address Labels</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="clothingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Clothing & Bags</a>
+                        <ul class="dropdown-menu" aria-labelledby="clothingDropdown">
+                            <li><a class="dropdown-item" href="clothing.html">T-Shirts</a></li>
+                            <li><a class="dropdown-item" href="clothing.html">Polo Shirts</a></li>
+                            <li><a class="dropdown-item" href="clothing.html">Hoodies</a></li>
+                            <li><a class="dropdown-item" href="clothing.html">Tote Bags</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="promoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Promotional Products</a>
+                        <ul class="dropdown-menu" aria-labelledby="promoDropdown">
+                            <li><a class="dropdown-item" href="promotional-products.html">Water Bottles</a></li>
+                            <li><a class="dropdown-item" href="promotional-products.html">Mugs</a></li>
+                            <li><a class="dropdown-item" href="promotional-products.html">Pens & Markers</a></li>
+                            <li><a class="dropdown-item" href="promotional-products.html">USB Drives</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="packagingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Packaging</a>
+                        <ul class="dropdown-menu" aria-labelledby="packagingDropdown">
+                            <li><a class="dropdown-item" href="packaging.html">Mailer Boxes</a></li>
+                            <li><a class="dropdown-item" href="packaging.html">Shipping Boxes</a></li>
+                            <li><a class="dropdown-item" href="packaging.html">Gift Bags</a></li>
+                            <li><a class="dropdown-item" href="packaging.html">Hang Tags</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="weddingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Invitations & Wedding</a>
+                        <ul class="dropdown-menu" aria-labelledby="weddingDropdown">
+                            <li><a class="dropdown-item" href="invitations-wedding.html">Wedding Invitations</a></li>
+                            <li><a class="dropdown-item" href="invitations-wedding.html">Save the Dates</a></li>
+                            <li><a class="dropdown-item" href="invitations-wedding.html">Thank You Cards</a></li>
+                            <li><a class="dropdown-item" href="invitations-wedding.html">Stationery</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="logoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Logo & Websites</a>
+                        <ul class="dropdown-menu" aria-labelledby="logoDropdown">
+                            <li><a class="dropdown-item" href="logo-websites.html">Logo Design</a></li>
+                            <li><a class="dropdown-item" href="logo-websites.html">Website Design</a></li>
+                            <li><a class="dropdown-item" href="logo-websites.html">Social Media Graphics</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">All Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="design-services.html">Design Services</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <div class="search-box me-3 d-none d-md-block">
+                        <input type="text" class="form-control" placeholder="Search products..." style="width: 200px;">
+                    </div>
+                    <a href="#" class="btn btn-outline-primary me-2 px-4" id="cart-button">
+                        <i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Create Account Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-5">
+                            <h2 class="card-title text-center mb-4">Create Account</h2>
+                            <form id="createAccountForm">
+                                <div class="mb-3">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" required minlength="8">
+                                    <small class="text-muted">Must be at least 8 characters</small>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="confirmPassword" class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" id="confirmPassword" required>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="newsletter">
+                                    <label class="form-check-label" for="newsletter">Send me emails about special offers and new products</label>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="terms" required>
+                                    <label class="form-check-label" for="terms">I agree to the <a href="terms-conditions.html">Terms and Conditions</a> and <a href="privacy-policy.html">Privacy Policy</a></label>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100 mb-3">Create Account</button>
+                            </form>
+                            <hr class="my-4">
+                            <div class="text-center">
+                                <p class="mb-0">Already have an account?</p>
+                                <a href="signin.html" class="btn btn-outline-primary mt-2">Sign In</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3">VistaPrint</h5>
+                    <p class="text-light small">Here for small business since 1995.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Let Us Help</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none small">My Account</a></li>
+                        <li><a href="#" class="text-light text-decoration-none small">Shipping</a></li>
+                        <li><a href="#" class="text-light text-decoration-none small">Contact & Support</a></li>
+                        <li><a href="#" class="text-light text-decoration-none small">Ideas & Advice</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Our Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none small">About Us</a></li>
+                        <li><a href="#" class="text-light text-decoration-none small">Careers</a></li>
+                        <li><a href="#" class="text-light text-decoration-none small">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Legal</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none small">Privacy Policy</a></li>
+                        <li><a href="#" class="text-light text-decoration-none small">Terms and Conditions</a></li>
+                        <li><a href="#" class="text-light text-decoration-none small">Legal Matters</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Contact</h6>
+                    <p class="text-light small mb-2"><i class="fas fa-phone me-2"></i> 1.866.207.4955</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-light small mb-0">A CIMPRESS company © 2001-2025 VistaPrint. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-light small mb-0">Current country: United States</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('createAccountForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const newsletter = document.getElementById('newsletter').checked;
+
+            // Validation
+            if (password !== confirmPassword) {
+                alert('Passwords do not match. Please try again.');
+                return;
+            }
+
+            if (password.length < 8) {
+                alert('Password must be at least 8 characters long.');
+                return;
+            }
+
+            // Get existing users
+            const users = JSON.parse(localStorage.getItem('users') || '[]');
+
+            // Check if user already exists
+            const existingUser = users.find(u => u.email === email);
+            if (existingUser) {
+                alert('An account with this email already exists. Please use a different email or sign in.');
+                return;
+            }
+
+            // Create new user
+            const newUser = {
+                id: Date.now(),
+                firstName,
+                lastName,
+                email,
+                password,
+                newsletter,
+                createdAt: new Date().toISOString()
+            };
+
+            // Add to users array
+            users.push(newUser);
+            localStorage.setItem('users', JSON.stringify(users));
+
+            // Set as current user
+            localStorage.setItem('currentUser', JSON.stringify(newUser));
+
+            // Show success message
+            alert('Account created successfully! Welcome to VistaPrint, ' + firstName + '!');
+
+            // Redirect to home page
+            window.location.href = 'index.html';
+        });
+
+        // Check if user is already logged in
+        const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+        if (currentUser) {
+            // User is already logged in, redirect to home
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
+

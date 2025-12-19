@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Cards - VistaPrint Clone</title>
+    <title>For Media - VistaPrint</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
@@ -19,7 +19,7 @@
                     </small>
                 </div>
                 <div class="col-md-6 text-end">
-                    <small id="user-info">
+                    <small>
                         <a href="signin.html" class="text-decoration-none me-3 text-dark">Sign In</a>
                         <a href="create-account.html" class="text-decoration-none text-dark">Create Account</a>
                     </small>
@@ -57,7 +57,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="businessCardsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Business Cards</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="businessCardsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Business Cards</a>
                         <ul class="dropdown-menu" aria-labelledby="businessCardsDropdown">
                             <li><a class="dropdown-item" href="business-cards.html">Standard Business Cards</a></li>
                             <li><a class="dropdown-item" href="business-cards.html">Premium Business Cards</a></li>
@@ -146,7 +146,7 @@
                     <div class="search-box me-3 d-none d-md-block">
                         <input type="text" class="form-control" placeholder="Search products..." style="width: 200px;">
                     </div>
-                    <a href="#" class="btn btn-outline-primary me-2" id="cart-button">
+                    <a href="#" class="btn btn-outline-primary me-2 px-4" id="cart-button">
                         <i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)
                     </a>
                 </div>
@@ -154,182 +154,22 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section bg-primary text-white py-5">
+    <!-- Page Content -->
+    <section class="py-5">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h1 class="display-4 fw-bold mb-4">Professional Business Cards</h1>
-                    <p class="lead mb-4">Make a lasting first impression with high-quality business cards. Choose from hundreds of templates or upload your own design.</p>
-                    <button class="btn btn-light btn-lg" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">Shop Now</button>
-                </div>
-                <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=600&h=400&fit=crop" class="img-fluid rounded" alt="Business Cards">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Products Section -->
-    <section class="py-5" id="products">
-        <div class="container">
-            <h2 class="text-center mb-5">Business Card Options</h2>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="product-card card h-100 border-0 shadow-sm category-card" data-category="business-card" data-price="9.99">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop" class="card-img-top" alt="Standard Business Cards">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Standard Business Cards</h5>
-                            <p class="text-muted small">3.5" x 2" • 14pt cardstock • 500 cards</p>
-                            <div class="price-section">
-                                <span class="price-from">Starting at</span>
-                                <div class="price fw-bold text-primary fs-4">$9.99</div>
-                            </div>
-                            <div class="rating mb-3">
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <small class="text-muted">(2,847)</small>
-                            </div>
-                            <a href="design-order.html" class="btn btn-primary w-100">Design & Order</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="product-card card h-100 border-0 shadow-sm category-card" data-category="business-card" data-price="19.99">
-                        <div class="position-relative">
-                            <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop" class="card-img-top" alt="Premium Business Cards">
-                            <div class="product-badge">Popular</div>
-                        </div>
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Premium Business Cards</h5>
-                            <p class="text-muted small">3.5" x 2" • 16pt cardstock • UV coating • 500 cards</p>
-                            <div class="price-section">
-                                <span class="price-from">Starting at</span>
-                                <div class="price fw-bold text-primary fs-4">$19.99</div>
-                            </div>
-                            <div class="rating mb-3">
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <small class="text-muted">(1,923)</small>
-                            </div>
-                            <a href="design-order.html" class="btn btn-primary w-100">Design & Order</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="product-card card h-100 border-0 shadow-sm category-card" data-category="business-card" data-price="29.99">
-                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop" class="card-img-top" alt="Folded Business Cards">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Folded Business Cards</h5>
-                            <p class="text-muted small">3.5" x 4" folded • 14pt cardstock • 250 cards</p>
-                            <div class="price-section">
-                                <span class="price-from">Starting at</span>
-                                <div class="price fw-bold text-primary fs-4">$29.99</div>
-                            </div>
-                            <div class="rating mb-3">
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="far fa-star text-warning"></i>
-                                <small class="text-muted">(856)</small>
-                            </div>
-                            <a href="design-order.html" class="btn btn-primary w-100">Design & Order</a>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h1 class="mb-4">For Media</h1>
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <h3 class="h5 mb-3">Media Resources</h3>
+                            <p>Access press releases, company information, and media resources for VistaPrint and CIMPRESS.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Include designer container from index.html -->
-    <div class="container my-5 designer-container" style="display: none;">
-        <div class="card">
-            <div class="card-body">
-                <h3 class="card-title text-center mb-4">Design Your <span id="selected-product">Business Cards</span></h3>
-                <div class="row">
-                    <div class="col-lg-10">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="design-section mb-4">
-                                    <h4>Front Design</h4>
-                                    <input type="file" class="form-control mb-3" id="front-design-upload" accept="image/*">
-                                    <div class="preview-area" id="front-preview-container">
-                                        <img id="front-design-preview" src="" alt="Front Preview">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="design-section mb-4" id="back-design-section">
-                                    <h4>Back Design</h4>
-                                    <input type="file" class="form-control mb-3" id="back-design-upload" accept="image/*">
-                                    <div class="preview-area" id="back-preview-container">
-                                        <img id="back-design-preview" src="" alt="Back Preview">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2">
-                        <div class="customization-panel">
-                            <input type="number" class="form-control mb-3" id="quantity" min="1" value="1" placeholder="Quantity">
-                            <button class="btn btn-primary w-100" id="add-to-cart">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Include modals -->
-    <div class="modal fade" id="cartModal" tabindex="-1">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Shopping Cart</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <div id="cart-items" class="mb-3"></div>
-                    <div class="cart-summary">
-                        <h5>Total: $<span id="cart-total">0.00</span></h5>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
-                    <button type="button" class="btn btn-primary" id="checkout-button">Proceed to Checkout</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="cropperModal" tabindex="-1">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Crop Image</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="img-container">
-                        <img id="cropperImage" src="" alt="Image to crop">
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary" id="cropImage">Crop</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-5 mt-5">
@@ -343,31 +183,31 @@
                     <h6 class="fw-bold mb-3">Let Us Help</h6>
                     <ul class="list-unstyled">
                         <li><a href="signin.html" class="text-light text-decoration-none small">My Account</a></li>
-                        <li><a href="#" class="text-light text-decoration-none small">Shipping</a></li>
-                        <li><a href="#" class="text-light text-decoration-none small">Contact & Support</a></li>
-                        <li><a href="#" class="text-light text-decoration-none small">Ideas & Advice</a></li>
-                        <li><a href="#" class="text-light text-decoration-none small">Reseller Program</a></li>
-                        <li><a href="#" class="text-light text-decoration-none small">Accessibility</a></li>
+                        <li><a href="shipping.html" class="text-light text-decoration-none small">Shipping</a></li>
+                        <li><a href="contact-support.html" class="text-light text-decoration-none small">Contact & Support</a></li>
+                        <li><a href="ideas-advice.html" class="text-light text-decoration-none small">Ideas & Advice</a></li>
+                        <li><a href="reseller-program.html" class="text-light text-decoration-none small">Reseller Program</a></li>
+                        <li><a href="accessibility.html" class="text-light text-decoration-none small">Accessibility</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
                     <h6 class="fw-bold mb-3">Our Company</h6>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-light text-decoration-none small">About Us</a></li>
-                        <li><a href="#" class="text-light text-decoration-none small">Careers</a></li>
-                        <li><a href="#" class="text-light text-decoration-none small">Ambassador Program</a></li>
-                        <li><a href="#" class="text-light text-decoration-none small">For Investors</a></li>
-                        <li><a href="#" class="text-light text-decoration-none small">For Media</a></li>
-                        <li><a href="#" class="text-light text-decoration-none small">Sustainability</a></li>
+                        <li><a href="about-us.html" class="text-light text-decoration-none small">About Us</a></li>
+                        <li><a href="careers.html" class="text-light text-decoration-none small">Careers</a></li>
+                        <li><a href="ambassador-program.html" class="text-light text-decoration-none small">Ambassador Program</a></li>
+                        <li><a href="for-investors.html" class="text-light text-decoration-none small">For Investors</a></li>
+                        <li><a href="for-media.html" class="text-light text-decoration-none small">For Media</a></li>
+                        <li><a href="sustainability.html" class="text-light text-decoration-none small">Sustainability</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
                     <h6 class="fw-bold mb-3">Legal</h6>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-light text-decoration-none small">Privacy and Cookie Policy</a></li>
-                        <li><a href="#" class="text-light text-decoration-none small">Terms and Conditions</a></li>
-                        <li><a href="#" class="text-light text-decoration-none small">Legal Matters</a></li>
-                        <li><a href="#" class="text-light text-decoration-none small">Do Not Sell or Share My Info</a></li>
+                        <li><a href="privacy-policy.html" class="text-light text-decoration-none small">Privacy and Cookie Policy</a></li>
+                        <li><a href="terms-conditions.html" class="text-light text-decoration-none small">Terms and Conditions</a></li>
+                        <li><a href="legal-matters.html" class="text-light text-decoration-none small">Legal Matters</a></li>
+                        <li><a href="do-not-sell.html" class="text-light text-decoration-none small">Do Not Sell or Share My Info</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
@@ -402,36 +242,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/cropperjs@1.5.12/dist/cropper.min.js"></script>
-    <script src="./js/script.js"></script>
-    <script>
-        // Load user info and cart count on page load
-        document.addEventListener('DOMContentLoaded', function() {
-            // Load user info
-            const currentUser = JSON.parse(localStorage.getItem('currentUser'));
-            const userInfoElement = document.getElementById('user-info');
-
-            if (currentUser && userInfoElement) {
-                userInfoElement.innerHTML = `
-                    <span class="me-3">Welcome, ${currentUser.firstName}!</span>
-                    <a href="#" class="text-decoration-none text-dark me-3" onclick="logout()">Sign Out</a>
-                `;
-            }
-
-            // Load cart count
-            const cartCount = localStorage.getItem('cartCount') || '0';
-            const cartCountElement = document.getElementById('cart-count');
-            if (cartCountElement) {
-                cartCountElement.textContent = cartCount;
-            }
-        });
-
-        // Logout function
-        function logout() {
-            localStorage.removeItem('currentUser');
-            localStorage.setItem('cartCount', '0');
-            location.reload();
-        }
-    </script>
 </body>
 </html>
+
